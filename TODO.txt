@@ -1,4 +1,4 @@
-- Compute other alignments with "mafft --globalpair --maxiterate 1000".
+- Compute all alignments with "mafft --globalpair --maxiterate 1000".
 - Compute all trees with "raxml-ng --msa alignment.fasta --model WAG+G4m".
 - Run spartaV2 on all the folders.
 - Calculate mean IR,DR,AI,AD for all datatsets.
