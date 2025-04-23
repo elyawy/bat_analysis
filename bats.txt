@@ -110,6 +110,7 @@ Pteropus ennisae
 Pteropus faunulus
 Pteropus fundatus
 Pteropus gilliardorum
+Pteropus giganteus
 Pteropus griseus
 Pteropus howensis
 Pteropus hypomelanus
@@ -480,7 +481,7 @@ Myotis blythii
 Myotis bocagii
 Myotis bombinus
 Myotis borneoensis
-Myotis brandti
+Myotis brandtii
 Myotis bucharensis
 Myotis californicus
 Myotis capaccinii
@@ -931,7 +932,7 @@ Miniopterus medius
 Miniopterus minor
 Miniopterus natalensis
 Miniopterus newtoni
-Minopterus paululus
+Miniopterus paululus
 Miniopterus petersoni
 Miniopterus pusillus
 Miniopterus robustior

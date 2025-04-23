@@ -46,7 +46,7 @@ msa_paths = Path("msas/")
 #%%
 
 SPECIES_THRESHOLD = 16
-UNIQUE_SEQUENCES_IN_MSA = 15
+UNIQUE_SEQUENCES_IN_MSA = 14
 COUNT = 0
 
 collected_msa_paths = []
