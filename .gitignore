@@ -1,2 +1,5 @@
 /msas
 /trees
+
+*.parquet.gzip
+**/mafft_correction/*

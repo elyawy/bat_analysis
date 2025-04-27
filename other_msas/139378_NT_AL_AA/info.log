@@ -1,0 +1,37 @@
+2025-04-24 10:06:01,007[INFO][main.py][main]: 
+	MAIN_PATH: /groups/pupko/elyawygoda/simulator_paper/bat_analysis/other_msas/139378_NT_AL_AA,
+	SEED: 1745478360982585062, NUM_SIMS: 100000, NUM_SIMS_CORRECTION: 200, SEQUENCE_TYPE: AA
+2025-04-24 10:06:43,330[INFO][simulate_data.py][main]: 
+	MAIN_PATH: /groups/pupko/elyawygoda/simulator_paper/bat_analysis/other_msas/139378_NT_AL_AA,
+	SEED: 1745478360982585062, NUM_SIMS: 100000,
+	LENGTH_DISTRIBUTION: zipf, INDEL_MODEL sim
+2025-04-24 10:06:43,764[INFO][simulate_data.py][simulate_data]: Starting msa simulation
+2025-04-24 10:06:45,707[INFO][simulate_data.py][main]: 
+	MAIN_PATH: /groups/pupko/elyawygoda/simulator_paper/bat_analysis/other_msas/139378_NT_AL_AA,
+	SEED: 1745478360982585064, NUM_SIMS: 100000,
+	LENGTH_DISTRIBUTION: zipf, INDEL_MODEL rim
+2025-04-24 10:06:45,844[INFO][simulate_data.py][simulate_data]: Starting msa simulation
+2025-04-24 10:06:49,520[INFO][correction.py][main]: 
+	MAIN_PATH: /groups/pupko/elyawygoda/simulator_paper/bat_analysis/other_msas/139378_NT_AL_AA,
+	SEED: 1745478360982585063, NUM_SIMS: 200, SEQUENCE_TYPE: AA,
+	LENGTH_DISTRIBUTION: zipf, INDEL_MODEL sim
+2025-04-24 10:06:49,538[INFO][correction.py][main]: 
+	MAIN_PATH: /groups/pupko/elyawygoda/simulator_paper/bat_analysis/other_msas/139378_NT_AL_AA,
+	SEED: 1745478360982585065, NUM_SIMS: 200, SEQUENCE_TYPE: AA,
+	LENGTH_DISTRIBUTION: zipf, INDEL_MODEL rim
+2025-04-24 10:06:49,701[INFO][correction.py][simulate_data]: Starting msa simulation
+2025-04-24 10:06:49,763[INFO][correction.py][simulate_data]: Starting msa simulation
+2025-04-24 10:12:54,527[INFO][correction.py][simulate_data]: Done with 200 msa simulations
+2025-04-24 10:12:54,565[INFO][correction.py][compute_realigned_stats]: Realigning MSAs and recomputing stats
+2025-04-24 10:13:33,278[INFO][correction.py][simulate_data]: Done with 200 msa simulations
+2025-04-24 10:13:33,303[INFO][correction.py][compute_realigned_stats]: Realigning MSAs and recomputing stats
+2025-04-25 06:01:09,403[INFO][simulate_data.py][simulate_data]: Done with 100000 msa simulations
+2025-04-25 06:22:04,849[INFO][simulate_data.py][simulate_data]: Done with 100000 msa simulations
+2025-04-25 18:47:10,561[INFO][correction.py][compute_realigned_stats]: Done recomputing stats
+2025-04-25 18:47:10,563[INFO][correction.py][compute_regressors]: Performing regression on all realigned stats
+2025-04-25 18:47:15,104[INFO][correction.py][compute_regressors]: Done with regression
+2025-04-26 00:41:45,576[INFO][correction.py][compute_realigned_stats]: Done recomputing stats
+2025-04-26 00:41:45,586[INFO][correction.py][compute_regressors]: Performing regression on all realigned stats
+2025-04-26 00:41:49,977[INFO][correction.py][compute_regressors]: Done with regression
+2025-04-26 00:42:06,269[INFO][abc_inference.py][main]: 
+	MAIN_PATH: /groups/pupko/elyawygoda/simulator_paper/bat_analysis/other_msas/139378_NT_AL_AA

@@ -1,0 +1,29 @@
+2025-04-24 10:28:28,559[INFO][main.py][main]: 
+	MAIN_PATH: /groups/pupko/elyawygoda/simulator_paper/bat_analysis/other_msas/7148_NT_AL_AA,
+	SEED: 1745479708531399713, NUM_SIMS: 100000, NUM_SIMS_CORRECTION: 200, SEQUENCE_TYPE: AA
+2025-04-24 10:28:56,025[INFO][simulate_data.py][main]: 
+	MAIN_PATH: /groups/pupko/elyawygoda/simulator_paper/bat_analysis/other_msas/7148_NT_AL_AA,
+	SEED: 1745479708531399715, NUM_SIMS: 100000,
+	LENGTH_DISTRIBUTION: zipf, INDEL_MODEL rim
+2025-04-24 10:28:56,063[INFO][simulate_data.py][main]: 
+	MAIN_PATH: /groups/pupko/elyawygoda/simulator_paper/bat_analysis/other_msas/7148_NT_AL_AA,
+	SEED: 1745479708531399713, NUM_SIMS: 100000,
+	LENGTH_DISTRIBUTION: zipf, INDEL_MODEL sim
+2025-04-24 10:28:56,270[INFO][simulate_data.py][simulate_data]: Starting msa simulation
+2025-04-24 10:28:56,279[INFO][simulate_data.py][simulate_data]: Starting msa simulation
+2025-04-24 10:28:59,471[INFO][correction.py][main]: 
+	MAIN_PATH: /groups/pupko/elyawygoda/simulator_paper/bat_analysis/other_msas/7148_NT_AL_AA,
+	SEED: 1745479708531399716, NUM_SIMS: 200, SEQUENCE_TYPE: AA,
+	LENGTH_DISTRIBUTION: zipf, INDEL_MODEL rim
+2025-04-24 10:28:59,485[INFO][correction.py][main]: 
+	MAIN_PATH: /groups/pupko/elyawygoda/simulator_paper/bat_analysis/other_msas/7148_NT_AL_AA,
+	SEED: 1745479708531399714, NUM_SIMS: 200, SEQUENCE_TYPE: AA,
+	LENGTH_DISTRIBUTION: zipf, INDEL_MODEL sim
+2025-04-24 10:28:59,644[INFO][correction.py][simulate_data]: Starting msa simulation
+2025-04-24 10:28:59,689[INFO][correction.py][simulate_data]: Starting msa simulation
+2025-04-24 10:29:23,292[INFO][correction.py][simulate_data]: Done with 200 msa simulations
+2025-04-24 10:29:23,334[INFO][correction.py][compute_realigned_stats]: Realigning MSAs and recomputing stats
+2025-04-24 10:29:33,780[INFO][correction.py][simulate_data]: Done with 200 msa simulations
+2025-04-24 10:29:33,843[INFO][correction.py][compute_realigned_stats]: Realigning MSAs and recomputing stats
+2025-04-24 12:24:43,924[INFO][simulate_data.py][simulate_data]: Done with 100000 msa simulations
+2025-04-24 12:49:52,076[INFO][simulate_data.py][simulate_data]: Done with 100000 msa simulations
