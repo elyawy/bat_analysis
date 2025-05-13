@@ -63,22 +63,53 @@ def extract_italic_text(wiki_url):
         return []
 
 def main():
-    # Get Wikipedia URL from user
-    wiki_url = input("Enter the Wikipedia URL: ")
-    
-    # Extract italic text
-    italic_texts = extract_italic_text(wiki_url)
-    italic_texts = list(filter(lambda x: len(x.split(" ")) == 2, italic_texts))
     # Print results
-    with open("bats.txt",'w') as f:
-        f.write("\n".join(italic_texts))
-    if italic_texts:
-        print("\nFound the following italicized text:")
-        for i, text in enumerate(italic_texts, 1):
-            print(f"{i}. {text}")
-        print(f"\nTotal items found: {len(italic_texts)}")
-    else:
-        print("No italicized text found or an error occurred.")
+    mammal_orders = [
+        "Rodentia",
+        "Chiroptera",
+        "Eulipotyphla",
+        "Primates",
+        "Artiodactyla",
+        "Carnivora",
+        "Diprotodontia",
+        "Didelphimorphia",
+        "Lagomorpha",
+        "Dasyuromorphia",
+        "Afrosoricida",
+        "Cingulata",
+        "Macroscelidea",
+        "Peramelemorphia",
+        "Perissodactyla",
+        "Pilosa",
+        "Scandentia",
+        "Paucituberculata",
+        "Pholidota",
+        "Hyracoidea",
+        "Monotremata",
+        "Sirenia",
+        "Proboscidea",
+        "Dermoptera",
+        "Microbiotheria",
+        "Notoryctemorphia",
+        "Tubulidentata"
+    ]
+    for order in mammal_orders:
+        # Get Wikipedia URL from user
+        wiki_url = f"https://en.wikipedia.org/wiki/List_of_{order.lower()}"
+        
+        # Extract italic text
+        italic_texts = extract_italic_text(wiki_url)
+        italic_texts = list(filter(lambda x: len(x.split(" ")) == 2, italic_texts))
+
+        with open(f"orders/{order}.txt",'w') as f:
+            f.write("\n".join(italic_texts))
+        if italic_texts:
+            print("\nFound the following italicized text:")
+            for i, text in enumerate(italic_texts, 1):
+                print(f"{i}. {text}")
+            print(f"\nTotal items found: {len(italic_texts)}")
+        else:
+            print("No italicized text found or an error occurred.")
 
 if __name__ == "__main__":
     main()
