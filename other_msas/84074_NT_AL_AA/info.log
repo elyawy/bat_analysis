@@ -1,37 +1,162 @@
-2025-04-24 10:29:33,807[INFO][main.py][main]: 
+2025-09-01 12:35:39,793[INFO][main.py][main]: 
 	MAIN_PATH: /groups/pupko/elyawygoda/simulator_paper/bat_analysis/other_msas/84074_NT_AL_AA,
-	SEED: 1745479773799917911, NUM_SIMS: 100000, NUM_SIMS_CORRECTION: 200, SEQUENCE_TYPE: AA
-2025-04-24 10:29:47,686[INFO][simulate_data.py][main]: 
+	SEED: 1756719339791918191, NUM_SIMS: 100000, NUM_SIMS_CORRECTION: 200, SEQUENCE_TYPE: AA, PRIOR: /groups/pupko/elyawygoda/simulator_paper/.venv/lib/python3.11/site-packages/spartaabc/default_prior.json
+2025-09-01 12:35:39,794[INFO][main.py][main]: {'fasta_file': PosixPath('/groups/pupko/elyawygoda/simulator_paper/bat_analysis/other_msas/84074_NT_AL_AA/alignment.fasta'), 'tree_file': PosixPath('/groups/pupko/elyawygoda/simulator_paper/bat_analysis/other_msas/84074_NT_AL_AA/alignment.tree'), 'model_file': PosixPath('/groups/pupko/elyawygoda/simulator_paper/bat_analysis/other_msas/84074_NT_AL_AA/alignment.fasta.raxml.bestModel'), 'correction_recommended': True}
+2025-09-01 12:36:56,694[INFO][simulate_data.py][main]: 
 	MAIN_PATH: /groups/pupko/elyawygoda/simulator_paper/bat_analysis/other_msas/84074_NT_AL_AA,
-	SEED: 1745479773799917913, NUM_SIMS: 100000,
-	LENGTH_DISTRIBUTION: zipf, INDEL_MODEL rim
-2025-04-24 10:29:47,699[INFO][simulate_data.py][main]: 
+	SEED: 1756719339791918193, NUM_SIMS: 100000,
+	INDEL_MODEL rim
+2025-09-01 12:36:56,830[INFO][simulate_data.py][main]: 
 	MAIN_PATH: /groups/pupko/elyawygoda/simulator_paper/bat_analysis/other_msas/84074_NT_AL_AA,
-	SEED: 1745479773799917911, NUM_SIMS: 100000,
-	LENGTH_DISTRIBUTION: zipf, INDEL_MODEL sim
-2025-04-24 10:29:47,843[INFO][simulate_data.py][simulate_data]: Starting msa simulation
-2025-04-24 10:29:47,850[INFO][simulate_data.py][simulate_data]: Starting msa simulation
-2025-04-24 10:29:48,328[INFO][correction.py][main]: 
+	SEED: 1756719339791918191, NUM_SIMS: 100000,
+	INDEL_MODEL sim
+2025-09-01 12:36:57,050[INFO][simulate_data.py][main]: 
+Loaded prior configuration from file /groups/pupko/elyawygoda/simulator_paper/.venv/lib/python3.11/site-packages/spartaabc/default_prior.json is:
+	PriorSampler(seed=1756719339791918193)
+  Indel Model: rim
+  Sequence Length: [404, 2944]
+  Indel Rates:
+    Sum Rates: method=uniform, range=[0.0, 0.05]
+    Ratio Rates: method=log_uniform, range=[-1.0, 1.0]
+  Length Distribution Parameters:
+    Length Distribution: zipf
+    Truncation: 50
+    Length Parameter: method=uniform, range=[1.01, 2.0]
+2025-09-01 12:36:57,050[INFO][simulate_data.py][main]: 
+Loaded prior configuration from file /groups/pupko/elyawygoda/simulator_paper/.venv/lib/python3.11/site-packages/spartaabc/default_prior.json is:
+	PriorSampler(seed=1756719339791918191)
+  Indel Model: sim
+  Sequence Length: [404, 2944]
+  Indel Rates:
+    Sum Rates: method=uniform, range=[0.0, 0.05]
+    Ratio Rates: method=log_uniform, range=[-1.0, 1.0]
+  Length Distribution Parameters:
+    Length Distribution: zipf
+    Truncation: 50
+    Length Parameter: method=uniform, range=[1.01, 2.0]
+2025-09-01 12:36:57,090[INFO][simulate_data.py][simulate_data]: Starting msa simulation
+2025-09-01 12:36:57,090[INFO][simulate_data.py][simulate_data]: Starting msa simulation
+2025-09-01 12:37:06,832[INFO][correction.py][main]: 
 	MAIN_PATH: /groups/pupko/elyawygoda/simulator_paper/bat_analysis/other_msas/84074_NT_AL_AA,
-	SEED: 1745479773799917914, NUM_SIMS: 200, SEQUENCE_TYPE: AA,
-	LENGTH_DISTRIBUTION: zipf, INDEL_MODEL rim
-2025-04-24 10:29:48,395[INFO][correction.py][main]: 
+	SEED: 1756719339791918192, NUM_SIMS: 200, SEQUENCE_TYPE: AA,
+	INDEL_MODEL: sim,
+	ALIGNER: MAFFT
+2025-09-01 12:37:06,832[INFO][correction.py][main]: 
 	MAIN_PATH: /groups/pupko/elyawygoda/simulator_paper/bat_analysis/other_msas/84074_NT_AL_AA,
-	SEED: 1745479773799917912, NUM_SIMS: 200, SEQUENCE_TYPE: AA,
-	LENGTH_DISTRIBUTION: zipf, INDEL_MODEL sim
-2025-04-24 10:29:48,478[INFO][correction.py][simulate_data]: Starting msa simulation
-2025-04-24 10:29:48,526[INFO][correction.py][simulate_data]: Starting msa simulation
-2025-04-24 10:34:34,505[INFO][correction.py][simulate_data]: Done with 200 msa simulations
-2025-04-24 10:34:34,546[INFO][correction.py][compute_realigned_stats]: Realigning MSAs and recomputing stats
-2025-04-24 10:35:15,525[INFO][correction.py][simulate_data]: Done with 200 msa simulations
-2025-04-24 10:35:15,550[INFO][correction.py][compute_realigned_stats]: Realigning MSAs and recomputing stats
-2025-04-24 18:05:12,152[INFO][simulate_data.py][simulate_data]: Done with 100000 msa simulations
-2025-04-24 18:43:01,672[INFO][simulate_data.py][simulate_data]: Done with 100000 msa simulations
-2025-04-26 08:09:11,100[INFO][correction.py][compute_realigned_stats]: Done recomputing stats
-2025-04-26 08:09:11,122[INFO][correction.py][compute_regressors]: Performing regression on all realigned stats
-2025-04-26 08:09:15,733[INFO][correction.py][compute_regressors]: Done with regression
-2025-04-26 22:45:35,377[INFO][correction.py][compute_realigned_stats]: Done recomputing stats
-2025-04-26 22:45:35,401[INFO][correction.py][compute_regressors]: Performing regression on all realigned stats
-2025-04-26 22:45:39,902[INFO][correction.py][compute_regressors]: Done with regression
-2025-04-26 22:46:14,405[INFO][abc_inference.py][main]: 
+	SEED: 1756719339791918194, NUM_SIMS: 200, SEQUENCE_TYPE: AA,
+	INDEL_MODEL: rim,
+	ALIGNER: MAFFT
+2025-09-01 12:37:06,934[INFO][correction.py][main]: 
+Loaded prior configuration from file /groups/pupko/elyawygoda/simulator_paper/.venv/lib/python3.11/site-packages/spartaabc/default_prior.json is:
+	PriorSampler(seed=1756719339791918192)
+  Indel Model: sim
+  Sequence Length: [404, 2944]
+  Indel Rates:
+    Sum Rates: method=uniform, range=[0.0, 0.05]
+    Ratio Rates: method=log_uniform, range=[-1.0, 1.0]
+  Length Distribution Parameters:
+    Length Distribution: zipf
+    Truncation: 50
+    Length Parameter: method=uniform, range=[1.01, 2.0]
+2025-09-01 12:37:06,934[INFO][correction.py][main]: 
+Loaded prior configuration from file /groups/pupko/elyawygoda/simulator_paper/.venv/lib/python3.11/site-packages/spartaabc/default_prior.json is:
+	PriorSampler(seed=1756719339791918194)
+  Indel Model: rim
+  Sequence Length: [404, 2944]
+  Indel Rates:
+    Sum Rates: method=uniform, range=[0.0, 0.05]
+    Ratio Rates: method=log_uniform, range=[-1.0, 1.0]
+  Length Distribution Parameters:
+    Length Distribution: zipf
+    Truncation: 50
+    Length Parameter: method=uniform, range=[1.01, 2.0]
+2025-09-01 12:37:06,939[INFO][correction.py][main]: Loaded substitution model:
+('submodel', <modelCode.WAG: 10>)
+('empirical_frequencies', False)
+('gamma_cats', 4)
+('gamma_shape', 0.907136)
+('partition', 'noname = 1-6667')
+('mode', 'PROTEIN')
+2025-09-01 12:37:06,939[INFO][correction.py][main]: Loaded substitution model:
+('submodel', <modelCode.WAG: 10>)
+('empirical_frequencies', False)
+('gamma_cats', 4)
+('gamma_shape', 0.907136)
+('partition', 'noname = 1-6667')
+('mode', 'PROTEIN')
+2025-09-01 12:37:07,031[INFO][correction.py][simulate_data]: Starting msa simulation
+2025-09-01 12:37:07,092[INFO][correction.py][simulate_data]: Starting msa simulation
+2025-09-01 12:42:37,925[INFO][correction.py][simulate_data]: Done with 200 msa simulations
+2025-09-01 12:42:37,947[INFO][correction.py][compute_realigned_stats]: Realigning MSAs and recomputing stats
+2025-09-01 12:43:32,562[INFO][correction.py][simulate_data]: Done with 200 msa simulations
+2025-09-01 12:43:32,581[INFO][correction.py][compute_realigned_stats]: Realigning MSAs and recomputing stats
+2025-09-01 14:10:06,758[INFO][simulate_data.py][simulate_data]: Simulation progress (sim): 5000/100000 (5.0%)
+2025-09-01 14:32:54,712[INFO][simulate_data.py][simulate_data]: Simulation progress (rim): 5000/100000 (5.0%)
+2025-09-01 15:11:03,500[INFO][correction.py][compute_realigned_stats]: Realignment progress (sim): 20/200 (10.0%)
+2025-09-01 15:26:54,243[INFO][simulate_data.py][simulate_data]: Simulation progress (sim): 10000/100000 (10.0%)
+2025-09-01 16:01:51,065[INFO][simulate_data.py][simulate_data]: Simulation progress (rim): 10000/100000 (10.0%)
+2025-09-01 16:32:52,630[INFO][simulate_data.py][simulate_data]: Simulation progress (sim): 15000/100000 (15.0%)
+2025-09-01 17:10:07,070[INFO][simulate_data.py][simulate_data]: Simulation progress (rim): 15000/100000 (15.0%)
+2025-09-01 17:32:54,610[INFO][simulate_data.py][simulate_data]: Simulation progress (sim): 20000/100000 (20.0%)
+2025-09-01 17:35:09,543[INFO][correction.py][compute_realigned_stats]: Realignment progress (rim): 20/200 (10.0%)
+2025-09-01 18:14:02,489[INFO][simulate_data.py][simulate_data]: Simulation progress (rim): 20000/100000 (20.0%)
+2025-09-01 18:26:05,720[INFO][simulate_data.py][simulate_data]: Simulation progress (sim): 25000/100000 (25.0%)
+2025-09-01 19:19:03,711[INFO][simulate_data.py][simulate_data]: Simulation progress (rim): 25000/100000 (25.0%)
+2025-09-01 19:20:36,367[INFO][simulate_data.py][simulate_data]: Simulation progress (sim): 30000/100000 (30.0%)
+2025-09-01 19:34:39,495[INFO][correction.py][compute_realigned_stats]: Realignment progress (sim): 40/200 (20.0%)
+2025-09-01 20:17:09,277[INFO][simulate_data.py][simulate_data]: Simulation progress (sim): 35000/100000 (35.0%)
+2025-09-01 20:22:44,027[INFO][simulate_data.py][simulate_data]: Simulation progress (rim): 30000/100000 (30.0%)
+2025-09-01 21:09:01,459[INFO][simulate_data.py][simulate_data]: Simulation progress (sim): 40000/100000 (40.0%)
+2025-09-01 21:20:07,535[INFO][correction.py][compute_realigned_stats]: Realignment progress (rim): 40/200 (20.0%)
+2025-09-01 21:29:34,039[INFO][simulate_data.py][simulate_data]: Simulation progress (rim): 35000/100000 (35.0%)
+2025-09-01 21:59:59,990[INFO][simulate_data.py][simulate_data]: Simulation progress (sim): 45000/100000 (45.0%)
+2025-09-01 22:38:51,271[INFO][simulate_data.py][simulate_data]: Simulation progress (rim): 40000/100000 (40.0%)
+2025-09-01 22:58:09,963[INFO][simulate_data.py][simulate_data]: Simulation progress (sim): 50000/100000 (50.0%)
+2025-09-01 23:22:21,773[INFO][correction.py][compute_realigned_stats]: Realignment progress (sim): 60/200 (30.0%)
+2025-09-01 23:41:09,380[INFO][simulate_data.py][simulate_data]: Simulation progress (rim): 45000/100000 (45.0%)
+2025-09-01 23:54:41,646[INFO][simulate_data.py][simulate_data]: Simulation progress (sim): 55000/100000 (55.0%)
+2025-09-02 00:23:54,362[INFO][correction.py][compute_realigned_stats]: Realignment progress (rim): 60/200 (30.0%)
+2025-09-02 00:38:23,812[INFO][simulate_data.py][simulate_data]: Simulation progress (rim): 50000/100000 (50.0%)
+2025-09-02 00:45:24,754[INFO][simulate_data.py][simulate_data]: Simulation progress (sim): 60000/100000 (60.0%)
+2025-09-02 01:34:14,872[INFO][simulate_data.py][simulate_data]: Simulation progress (rim): 55000/100000 (55.0%)
+2025-09-02 01:35:45,995[INFO][simulate_data.py][simulate_data]: Simulation progress (sim): 65000/100000 (65.0%)
+2025-09-02 02:25:43,457[INFO][correction.py][compute_realigned_stats]: Realignment progress (sim): 80/200 (40.0%)
+2025-09-02 02:28:56,164[INFO][simulate_data.py][simulate_data]: Simulation progress (sim): 70000/100000 (70.0%)
+2025-09-02 02:31:27,442[INFO][simulate_data.py][simulate_data]: Simulation progress (rim): 60000/100000 (60.0%)
+2025-09-02 03:22:20,448[INFO][simulate_data.py][simulate_data]: Simulation progress (sim): 75000/100000 (75.0%)
+2025-09-02 03:27:05,807[INFO][simulate_data.py][simulate_data]: Simulation progress (rim): 65000/100000 (65.0%)
+2025-09-02 04:12:03,992[INFO][simulate_data.py][simulate_data]: Simulation progress (sim): 80000/100000 (80.0%)
+2025-09-02 04:18:18,241[INFO][simulate_data.py][simulate_data]: Simulation progress (rim): 70000/100000 (70.0%)
+2025-09-02 04:59:16,139[INFO][simulate_data.py][simulate_data]: Simulation progress (sim): 85000/100000 (85.0%)
+2025-09-02 05:08:40,511[INFO][simulate_data.py][simulate_data]: Simulation progress (rim): 75000/100000 (75.0%)
+2025-09-02 05:13:47,987[INFO][correction.py][compute_realigned_stats]: Realignment progress (rim): 80/200 (40.0%)
+2025-09-02 05:33:47,569[INFO][simulate_data.py][simulate_data]: Simulation progress (sim): 90000/100000 (90.0%)
+2025-09-02 05:50:09,406[INFO][correction.py][compute_realigned_stats]: Realignment progress (sim): 100/200 (50.0%)
+2025-09-02 05:52:57,018[INFO][simulate_data.py][simulate_data]: Simulation progress (rim): 80000/100000 (80.0%)
+2025-09-02 06:11:22,954[INFO][simulate_data.py][simulate_data]: Simulation progress (sim): 95000/100000 (95.0%)
+2025-09-02 06:32:20,173[INFO][simulate_data.py][simulate_data]: Simulation progress (rim): 85000/100000 (85.0%)
+2025-09-02 06:50:59,244[INFO][simulate_data.py][simulate_data]: Simulation progress (sim): 99999/100000 (100.0%)
+2025-09-02 06:50:59,538[INFO][simulate_data.py][simulate_data]: Done with 100000 msa simulations
+2025-09-02 07:03:42,961[INFO][simulate_data.py][simulate_data]: Simulation progress (rim): 90000/100000 (90.0%)
+2025-09-02 07:25:29,267[INFO][simulate_data.py][simulate_data]: Simulation progress (rim): 95000/100000 (95.0%)
+2025-09-02 07:38:30,104[INFO][simulate_data.py][simulate_data]: Simulation progress (rim): 99999/100000 (100.0%)
+2025-09-02 07:38:30,212[INFO][simulate_data.py][simulate_data]: Done with 100000 msa simulations
+2025-09-02 08:20:36,570[INFO][correction.py][compute_realigned_stats]: Realignment progress (rim): 100/200 (50.0%)
+2025-09-02 10:09:16,819[INFO][correction.py][compute_realigned_stats]: Realignment progress (sim): 120/200 (60.0%)
+2025-09-02 10:42:35,811[INFO][correction.py][compute_realigned_stats]: Realignment progress (rim): 120/200 (60.0%)
+2025-09-02 13:21:45,628[INFO][correction.py][compute_realigned_stats]: Realignment progress (sim): 140/200 (70.0%)
+2025-09-02 14:23:44,278[INFO][correction.py][compute_realigned_stats]: Realignment progress (rim): 140/200 (70.0%)
+2025-09-02 16:18:19,386[INFO][correction.py][compute_realigned_stats]: Realignment progress (sim): 160/200 (80.0%)
+2025-09-02 18:16:27,725[INFO][correction.py][compute_realigned_stats]: Realignment progress (rim): 160/200 (80.0%)
+2025-09-02 20:10:38,770[INFO][correction.py][compute_realigned_stats]: Realignment progress (sim): 180/200 (90.0%)
+2025-09-02 23:52:59,802[INFO][correction.py][compute_realigned_stats]: Realignment progress (rim): 180/200 (90.0%)
+2025-09-02 23:58:39,185[INFO][correction.py][compute_realigned_stats]: Realignment progress (sim): 199/200 (99.5%)
+2025-09-03 00:16:16,347[INFO][correction.py][compute_realigned_stats]: Done recomputing stats
+2025-09-03 00:16:16,349[INFO][correction.py][compute_regressors]: Performing regression on all realigned stats
+2025-09-03 00:16:20,465[INFO][correction.py][compute_regressors]: Done with regression
+2025-09-03 03:43:11,680[INFO][correction.py][compute_realigned_stats]: Realignment progress (rim): 199/200 (99.5%)
+2025-09-03 04:07:43,388[INFO][correction.py][compute_realigned_stats]: Done recomputing stats
+2025-09-03 04:07:43,389[INFO][correction.py][compute_regressors]: Performing regression on all realigned stats
+2025-09-03 04:07:47,563[INFO][correction.py][compute_regressors]: Done with regression
+2025-09-03 04:08:16,825[INFO][abc_inference.py][main]: 
 	MAIN_PATH: /groups/pupko/elyawygoda/simulator_paper/bat_analysis/other_msas/84074_NT_AL_AA
