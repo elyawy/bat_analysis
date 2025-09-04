@@ -1,6 +1,6 @@
 import re
 import datetime
-import os
+from pathlib import Path
 import csv
 
 def extract_simulation_time(log_file_path):
@@ -40,7 +40,7 @@ def extract_simulation_time(log_file_path):
 
 def process_directory(directory_path, output_csv):
     # Get all log files in the directory
-    log_files = [f for f in os.listdir(directory_path) if f.endswith('.log')]
+    log_files = list(directory_path.glob('**/*.log'))
     
     # Prepare CSV output
     with open(output_csv, 'w', newline='') as csvfile:
@@ -48,10 +48,9 @@ def process_directory(directory_path, output_csv):
         csv_writer.writerow(['File_Name', 'Start_Time', 'End_Time', 'Duration_Seconds', 'Duration_Minutes', 'Duration_Hours'])
         
         for log_file in log_files:
-            file_path = os.path.join(directory_path, log_file)
-            file_name = os.path.splitext(log_file)[0]  # Remove .log suffix
+            file_name = log_file.parent.stem  # Remove .log suffix
             
-            result = extract_simulation_time(file_path)
+            result = extract_simulation_time(log_file)
             
             if result:
                 csv_writer.writerow([
@@ -67,8 +66,8 @@ def process_directory(directory_path, output_csv):
                 print(f"Could not extract simulation times from {log_file}")
 
 def main():
-    directory_path = 'bat_logs'  # Current directory, change this to your log files directory
-    output_csv = 'times_bats.csv'
+    directory_path = Path('other_msas').resolve()  # Current directory, change this to your log files directory
+    output_csv = 'times_others.csv'
     
     try:
         process_directory(directory_path, output_csv)
