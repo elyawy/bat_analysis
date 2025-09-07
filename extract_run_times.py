@@ -12,7 +12,9 @@ def extract_simulation_time(log_file_path):
         # Extract timestamp patterns for start and end of simulations
         start_pattern = r'(\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2},\d{3})\[INFO\]\[main\.py\]\[main\]: '
         end_pattern = r'(\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2},\d{3})\[INFO\]\[abc_inference\.py\]\[main\]: '
-        
+        # start_pattern = r'(\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2},\d{3})\[INFO\]\[simulate_data\.py\]\[simulate_data\]: Starting msa simulation'
+        # end_pattern = r'(\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2},\d{3})\[INFO\]\[simulate_data\.py\]\[simulate_data\]: Done with 100000 msa simulations'
+
         # Find all matches
         start_times = re.findall(start_pattern, log_content)
         end_times = re.findall(end_pattern, log_content)
@@ -66,8 +68,8 @@ def process_directory(directory_path, output_csv):
                 print(f"Could not extract simulation times from {log_file}")
 
 def main():
-    directory_path = Path('other_msas').resolve()  # Current directory, change this to your log files directory
-    output_csv = 'times_others.csv'
+    directory_path = Path('bat_msas').resolve()  # Current directory, change this to your log files directory
+    output_csv = 'times_bats.csv'
     
     try:
         process_directory(directory_path, output_csv)
